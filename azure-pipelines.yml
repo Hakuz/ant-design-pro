@@ -5,10 +5,7 @@
 name: ant design pro
 
 trigger:
-  batch: true
-  branches:
-    exclude:
-      - gh-pages
+  - master
 
 jobs:
   - job: lintAndBuild
