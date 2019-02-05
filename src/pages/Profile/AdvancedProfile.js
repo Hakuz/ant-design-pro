@@ -30,35 +30,35 @@ const getWindowWidth = () => window.innerWidth || document.documentElement.clien
 
 const menu = (
   <Menu>
-    <Menu.Item key="1">选项一</Menu.Item>
-    <Menu.Item key="2">选项二</Menu.Item>
-    <Menu.Item key="3">选项三</Menu.Item>
+    <Menu.Item key="1">Option one</Menu.Item>
+    <Menu.Item key="2">Option two</Menu.Item>
+    <Menu.Item key="3">Option three</Menu.Item>
   </Menu>
 );
 
 const action = (
   <Fragment>
     <ButtonGroup>
-      <Button>操作</Button>
-      <Button>操作</Button>
+      <Button>Operating</Button>
+      <Button>Operating</Button>
       <Dropdown overlay={menu} placement="bottomRight">
         <Button>
           <Icon type="ellipsis" />
         </Button>
       </Dropdown>
     </ButtonGroup>
-    <Button type="primary">主操作</Button>
+    <Button type="primary">Main operation</Button>
   </Fragment>
 );
 
 const extra = (
   <Row>
     <Col xs={24} sm={12}>
-      <div className={styles.textSecondary}>状态</div>
-      <div className={styles.heading}>待审批</div>
+      <div className={styles.textSecondary}>Status</div>
+      <div className={styles.heading}>Pending</div>
     </Col>
     <Col xs={24} sm={12}>
-      <div className={styles.textSecondary}>订单金额</div>
+      <div className={styles.textSecondary}>Order amount</div>
       <div className={styles.heading}>¥ 568.08</div>
     </Col>
   </Row>
@@ -66,32 +66,32 @@ const extra = (
 
 const description = (
   <DescriptionList className={styles.headerList} size="small" col="2">
-    <Description term="创建人">曲丽丽</Description>
-    <Description term="订购产品">XX 服务</Description>
-    <Description term="创建时间">2017-07-07</Description>
-    <Description term="关联单据">
+    <Description term="Founder">Qu Lili</Description>
+    <Description term="Ordering Products">XX service</Description>
+    <Description term="Creation time">2017-07-07</Description>
+    <Description term="Associated document">
       <a href="">12421</a>
     </Description>
-    <Description term="生效日期">2017-07-07 ~ 2017-08-08</Description>
-    <Description term="备注">请于两个工作日内确认</Description>
+    <Description term="Effective date">2017-07-07 ~ 2017-08-08</Description>
+    <Description term="Remarks">Please confirm within two working days</Description>
   </DescriptionList>
 );
 
 const tabList = [
   {
     key: 'detail',
-    tab: '详情',
+    tab: 'Detail',
   },
   {
     key: 'rule',
-    tab: '规则',
+    tab: 'Rule',
   },
 ];
 
 const desc1 = (
   <div className={classNames(styles.textSecondary, styles.stepDescription)}>
     <Fragment>
-      曲丽丽
+      Qu Lili
       <Icon type="dingding-o" style={{ marginLeft: 8 }} />
     </Fragment>
     <div>2016-12-12 12:32</div>
